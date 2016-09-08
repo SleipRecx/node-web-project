@@ -1,10 +1,6 @@
 
 exports.default = function(req,res){
-	res.render("default", {route: "/"});
-};
-
-exports.about = function(req,res){
-	res.render("default", {route: "about", pageTitle: "About"});
+	res.render("index", {route: "/"});
 };
 
 exports.bad = function(req,res){

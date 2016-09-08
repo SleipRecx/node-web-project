@@ -4,11 +4,9 @@ var app = express();
 
 app.set("view engine", "ejs");
 
-app.locals.pageTitle = "Exercise 2";
+app.set('views', __dirname + '/public/html');
 
 app.get("/", routes.default);
-
-app.get("/about", routes.about);
 
 app.get("*", routes.bad);
 
