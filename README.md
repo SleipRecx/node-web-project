@@ -1,6 +1,6 @@
 # README #
 
-#Oving2 web development course NTNU fall 2016#
+#Web development course NTNU fall 2016, exercise 2#
 
 ### How do I get set up? ###
 
