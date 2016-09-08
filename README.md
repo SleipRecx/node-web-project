@@ -6,7 +6,7 @@
 
 
 ```
-<b>npm install</b>
+**npm install**
 
-<b>node app.js</b>
+**node app.js**
 ```
