@@ -4,5 +4,8 @@
 
 ### How do I get set up? ###
 
-<code>npm install</code>
-<code>node app.js</code>
+
+```
+npm install
+node app.js
+```
