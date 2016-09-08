@@ -4,9 +4,10 @@
 
 ### How do I get set up? ###
 
-
+#
 ```
-#npm install#
+npm install
 
 node app.js
 ```
+#
