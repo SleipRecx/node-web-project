@@ -6,6 +6,7 @@
 
 
 ```
-npm install
-node app.js
+<b>npm install</b>
+
+<b>node app.js</b>
 ```
