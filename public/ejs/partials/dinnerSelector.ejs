@@ -1,0 +1,36 @@
+<header>
+    <h1>The Dinner Selector</h1>
+    <p>When you want everything for dinner, but can only eat one thing at a time.</p>
+    <nav>
+        <ul class="inline-list">
+            <li>
+                <button id="add-dinner-link" class="active">Add dinner</button>
+            </li>
+            <li>
+                <button id="get-dinner-link">Get dinner</button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section id="dinner-list-section">
+    <h2>Your dinner list</h2>
+    <p>Add a dish to your dinner options.</p>
+    <form>
+        <label>Dinner:</label>
+        <input type="text" id="name" name="name" title="name">
+        <button id="add-dinner" type="button">Add</button>
+    </form>
+    <p>Your dinners:</p>
+    <ul id="dinner-list">
+        <li>Taco</li>
+        <li>Pizza</li>
+        <li>Hamburger</li>
+    </ul>
+</section>
+s
+<section id="dinner-getting-section" class="hidden">
+    <h2>Get a random dinner</h2>
+    <button id="get-dinner">Get random dinner</button>
+    <output id="dinner-result"></output>
+</section>
