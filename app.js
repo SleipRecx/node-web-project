@@ -16,6 +16,8 @@ app.get("/dinner", routes.dinner);
 
 app.get("/beer", routes.beer);
 
+app.get("/beer_img", routes.beer_img);
+
 app.get("*", routes.bad);
 
 var port = 7432;
