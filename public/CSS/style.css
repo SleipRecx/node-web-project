@@ -1,0 +1,83 @@
+
+    /*------------- TABLE OF CONTENTS ------------------ */
+    /*--------- CH1 GENERIC ---------*/
+    /*--------- CH2 HEADER ---------*/
+    /*--------- CH3 NAVIGATION ---------*/
+    /*--------- CH4 MAIN ---------*/
+    /*--------- CH5 FOOTER ---------*/
+
+
+
+    /*--------------- CH1 GENERIC --------*/
+    body{
+      margin: 0px;
+      padding: 0px;
+      font-family: 'Open Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrapper {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .wrapper > * {
+        padding: 10px;
+        flex: 1 100%;
+    }
+
+    /*--------------- CH2 HEADER --------*/
+    .header {
+        background: tomato;
+    }
+
+
+    /*--------------- CH3 NAVIGATION --------*/
+
+    .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        background-color: lightgrey;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+    }
+
+
+    .flex-item {
+        background-color: cornflowerblue;
+        width: 14%;
+        padding: 2em;
+        background-color: red;
+        list-style: none;
+
+    }
+    .flex-item:hover{
+        background-color: darkred;
+    }
+
+
+    /*--------------- CH4 MAIN --------*/
+
+    main {
+        text-align: left;
+        margin: 0px;
+    }
+
+
+
+    /*--------------- CH5 FOOTER --------*/
+
+    .footer {
+        background: lightgreen;
+    }

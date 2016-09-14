@@ -3,13 +3,11 @@
   <head> <% include ejs/partials/head.ejs %> </head>
   <body>
   <div class="wrapper">
-    <% include partials/header.ejs%>
+    <% include ejs/partials/header.ejs %>
+    <% var path = "ejs/partials/" + route + ".ejs" %>
+    <main>  <%- include(path) %> </main>
 
-    <h2> You are here "<%= route %>" </h2>
-
-    <main>  </main>
-
-    <% include partials/footer.ejs%>
+    <% include ejs/partials/footer.ejs %>
   </div>
   </body>
 </html>

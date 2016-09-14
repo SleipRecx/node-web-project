@@ -7,7 +7,14 @@ app.set("view engine", "ejs");
 app.set('views', __dirname + '/public');
 
 app.use(express.static('public'));
-app.get("/", routes.default);
+
+app.get("/", routes.home);
+
+app.get("/internet", routes.internet);
+
+app.get("/dinner", routes.dinner);
+
+app.get("/beer", routes.beer);
 
 app.get("*", routes.bad);
 
