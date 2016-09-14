@@ -5,7 +5,7 @@ $(document).ready(function(){
       console.log('rgmouseenter')
       $.ajax({url:"data", success:function(result){
           $("#ajaxtest").html(result);
-    
+
       }})
 
 
