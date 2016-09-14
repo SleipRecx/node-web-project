@@ -1,6 +1,19 @@
 // Runs the clock in upper right corner on startup
 //Also sets some attributes on the iframe that are no longer valid HTML5 markup
-
+$(document).ready(function(){
+  $("#ajaxtest").mouseenter(function(){
+      console.log('rgmouseenter')
+var xhttp=new XMLHttpRequest();
+      xhttp.open("GET","data",true);
+      xhttp.send();
+     xhttp.onreadystatechange=function(){
+         if(this.readyState==4 && this.status==200){
+             console.log(this.readyState+" "+ this.status)
+      document.getElementById("ajaxtest").innerHTML=xhttp.responseText;
+     }
+     }
+  });
+});
 document.addEventListener('DOMContentLoaded', function() {
    clock();
     document.getElementById('mainContent').scrolling='no';
