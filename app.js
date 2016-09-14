@@ -15,8 +15,9 @@ app.get("/internet", routes.internet);
 app.get("/dinner", routes.dinner);
 
 app.get("/beer", routes.beer);
-
+app.get("/data",routes.data);
 app.get("*", routes.bad);
+
 
 var port = 7432;
 
