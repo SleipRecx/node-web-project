@@ -14,6 +14,7 @@ exports.dinner = function(req,res){
 exports.beer = function(req,res){
 	res.render("index", {route: "beer"});
 };
+
 exports.doc = function(req,res){
 	res.render("index", {route: "doc"});
 };
