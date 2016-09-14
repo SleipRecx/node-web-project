@@ -4,8 +4,9 @@ var app = express();
 
 app.set("view engine", "ejs");
 
-app.set('views', __dirname + '/public/ejs');
+app.set('views', __dirname + '/public');
 
+app.use(express.static('public'));
 app.get("/", routes.default);
 
 app.get("*", routes.bad);
