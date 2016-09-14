@@ -49,6 +49,87 @@
         flex: 1 100%;
     }
 
+    .section1{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        height: 300px;
+        background-color: #f05f40;
+        color: white;
+    }
+
+    .section2{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        height: 300px;
+        background-color: #fff;
+        color: #222222;
+    }
+
+    .section3{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        height: 300px;
+        background-color: #222222;
+        color: white;
+    }
+
+    .btn {
+        cursor: pointer;
+        margin: 0 auto;
+        width: 15%;
+        border: 0;
+        border-radius: 300px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 15px 30px;
+        border-color: #fff;
+        color: #222;
+        background-color: #fff;
+        margin: 1em;
+    }
+
+    .btn:hover {
+        background-color: #ccc;
+    }
+
+    .btn-inverted {
+        border-color: #222;
+        color: #fff;
+        background-color: #222;
+    }
+
+    .btn-inverted:hover {
+        background-color: darkgrey;
+    }
+
+    input[type=text]{
+        margin: 0 auto;
+        width: 15%;
+        border: 0;
+        border-radius: 300px;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 15px 30px;
+        border-color: #fff;
+        color: #222;
+        background-color: #fff;
+        margin: 1em;
+    }
+
+    .list-unstyled{
+        list-style: none;
+    }
+
     /*--------------- CH2 HEADER --------*/
     .header {
         background: #364850;
