@@ -15,10 +15,13 @@ exports.beer = function(req,res){
 	res.render("index", {route: "beer"});
 };
 
+exports.film = function(req,res){
+	res.render("index", {route: "film"})
+};
+
 exports.doc = function(req,res){
 	res.render("index", {route: "doc"});
 };
-
 
 exports.beer_img = function(req,res){
 	res.sendFile('img/beers/beer1.png', { root: "public" });

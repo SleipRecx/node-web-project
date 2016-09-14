@@ -1,0 +1,60 @@
+
+.image-display-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.images-container {
+    text-align: center;
+    background-color: blue;
+    padding: 10px;
+}
+
+.image-display {
+    text-align: center;
+    display: block;
+    background-color: #f05f40;
+    padding: 10px;
+}
+
+.current-image {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    -webkit-box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px #000000;
+}
+
+.current-image-container {
+    display: inline-block;
+    width: 20%;
+    padding: 20px;
+    text-align: left;
+}
+
+.current-image-text-container {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+}
+
+.current-image-text {
+    display: inline;
+}
+
+.chosen-image {
+    outline: solid 3px red;
+    outline-offset: -3px;
+}
+
+.image {
+    width: 7%;
+    height: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.image:hover {
+    cursor: pointer;
+}

@@ -20,6 +20,8 @@ app.get("/doc", routes.doc);
 
 app.get("/beer_img", routes.beer_img);
 
+app.get("/film", routes.film);
+
 app.get("/data",routes.data);
 
 app.get("*", routes.bad);
