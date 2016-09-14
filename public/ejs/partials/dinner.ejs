@@ -1,36 +1,36 @@
-<header>
+<header class="section1">
     <h1>The Dinner Selector</h1>
     <p>When you want everything for dinner, but can only eat one thing at a time.</p>
     <nav>
-        <ul class="inline-list">
+        <ul class="list-unstyled inline-list">
             <li>
-                <button id="add-dinner-link" class="active">Add dinner</button>
+                <button id="add-dinner-link" class="btn">Add dinner</button>
             </li>
             <li>
-                <button id="get-dinner-link">Get dinner</button>
+                <button id="get-dinner-link" class="btn">Get dinner</button>
             </li>
         </ul>
     </nav>
 </header>
 
-<section id="dinner-list-section">
+<section id="dinner-list-section" class="section3">
     <h2>Your dinner list</h2>
     <p>Add a dish to your dinner options.</p>
     <form>
         <label>Dinner:</label>
         <input type="text" id="name" name="name" title="name">
-        <button id="add-dinner" type="button">Add</button>
+        <button id="add-dinner" class="btn" type="button">Add</button>
     </form>
     <p>Your dinners:</p>
-    <ul id="dinner-list">
+    <ul id="dinner-list" class="list-unstyled">
         <li>Taco</li>
         <li>Pizza</li>
         <li>Hamburger</li>
     </ul>
 </section>
-s
-<section id="dinner-getting-section" class="hidden">
+
+<section id="dinner-getting-section" class="section3">
     <h2>Get a random dinner</h2>
-    <button id="get-dinner">Get random dinner</button>
+    <button id="get-dinner" class="btn">Get random dinner</button>
     <output id="dinner-result"></output>
 </section>
