@@ -16,7 +16,7 @@ exports.beer = function(req,res){
 };
 
 exports.data=function(req,res){
-res.sendFile("stuff.txt",{root: "public"});
+res.sendFile("kaText1.txt",{root: "public"});
 };
 
 exports.bad = function(req,res){

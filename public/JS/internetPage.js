@@ -3,16 +3,18 @@
 $(document).ready(function(){
   $("#ajaxtest").mouseenter(function(){
       console.log('rgmouseenter')
-var xhttp=new XMLHttpRequest();
-      xhttp.open("GET","data",true);
-      xhttp.send();
-     xhttp.onreadystatechange=function(){
-         if(this.readyState==4 && this.status==200){
-             console.log(this.readyState+" "+ this.status)
-      document.getElementById("ajaxtest").innerHTML=xhttp.responseText;
-     }
-     }
+      $.ajax({url:"data", success:function(result){
+          $("#ajaxtest").html(result);
+    
+      }})
+
+
   });
+    $("#ajaxtest").mouseleave(function(){
+        console.log('mousexit');
+        $("#ajaxtest").html("This is original text from HTML!");
+
+    })
 });
 
 // function to switch between color palettes in right side menu
