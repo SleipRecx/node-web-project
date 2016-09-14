@@ -3,9 +3,10 @@
   <head> <% include ejs/partials/head.ejs %> </head>
   <body>
   <div class="wrapper">
-
     <% include ejs/partials/header.ejs %>
+
     <% var path = "ejs/partials/" + route + ".ejs" %>
+
     <main>  <%- include(path) %> </main>
 
     <% include ejs/partials/footer.ejs %>

@@ -9,9 +9,21 @@
 
 
     /*--------------- CH1 GENERIC --------*/
-    h1 {
-        color: #d8d8d8;
+    header h1 {
+        color: white;
     }
+
+    header a{
+      text-decoration: none;
+      color: white;
+      font-size: 14pt;
+      border: 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500px;
+    }
+
+
     body{
       margin: 0px;
       padding: 0px;
@@ -39,7 +51,7 @@
 
     /*--------------- CH2 HEADER --------*/
     .header {
-        background: #262626;
+        background: #364850;
     }
 
 
@@ -61,11 +73,12 @@
     .flex-item {
         width: 14%;
         padding: 2em;
-        background-color: #d8d8d8;
+        background-color: #67727A;
         list-style: none;
         font-size: 16px;
         color: #262626;
     }
+    
     .flex-item:hover{
         background-color: #f05f40;
     }
