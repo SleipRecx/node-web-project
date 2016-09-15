@@ -10,8 +10,9 @@
 
     /*--------------- CH1 GENERIC --------*/
     header h1 {
-        color: white;
+            color: #d8d8d8;
     }
+
 
     header a{
       text-decoration: none;
@@ -31,108 +32,21 @@
       -webkit-font-smoothing: antialiased;
     }
 
+
     .wrapper {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
-
         -webkit-flex-flow: row wrap;
         flex-flow: row wrap;
-
         font-weight: bold;
         text-align: center;
     }
 
     .wrapper > * {
         flex: 1 100%;
-    }
-
-    .section1{
-        padding-top: 40px;
-        padding-bottom: 40px;
-        bottom: 0px;
-        width: 100%;
-        text-align: center;
-        height: 300px;
-        background-color: #f05f40;
-        color: white;
-    }
-
-    .section2{
-        padding-top: 40px;
-        padding-bottom: 40px;
-        bottom: 0px;
-        width: 100%;
-        text-align: center;
-        height: 300px;
-        background-color: #fff;
-        color: #222222;
-    }
-
-    .section3{
-        padding-top: 40px;
-        padding-bottom: 40px;
-        bottom: 0px;
-        width: 100%;
-        text-align: center;
-        height: 300px;
-        background-color: #222222;
-        color: white;
-    }
-
-    .btn {
-        cursor: pointer;
-        margin: 0 auto;
-        width: 15%;
-        border: 0;
-        border-radius: 300px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 700;
-        padding: 15px 30px;
-        border-color: #fff;
-        color: #222;
-        background-color: #fff;
-        margin: 1em;
-    }
-
-    .btn:hover {
-        background-color: #ccc;
-    }
-
-    .btn-inverted {
-        border-color: #222;
-        color: #fff;
-        background-color: #222;
-    }
-
-    .btn-inverted:hover {
-        background-color: darkgrey;
-    }
-
-    input[type=text]{
-        margin: 0 auto;
-        width: 15%;
-        border: 0;
-        border-radius: 300px;
-        text-decoration: none;
-        font-weight: 700;
-        padding: 15px 30px;
-        border-color: #fff;
-        color: #222;
-        background-color: #fff;
-        margin: 1em;
-    }
-
-    .list-unstyled{
-        list-style: none;
-    }
-
-    /*--------------- CH2 HEADER --------*/
-    .header {
-        background: #364850;
     }
 
 
@@ -147,19 +61,19 @@
         justify-content: center;
         padding:0;
         width: 100%;
-        margin-bottom: 0;
+        margin: 0;
     }
-
 
     .flex-item {
         width: 14%;
         padding: 2em;
-        background-color: #67727A;
+        background-color: #41555f;
         list-style: none;
         font-size: 16px;
         color: #262626;
+        border-left: 1px solid rgba(255, 255, 255, 0.17);
     }
-    
+
     .flex-item:hover{
         background-color: #f05f40;
     }
@@ -177,5 +91,10 @@
     /*--------------- CH5 FOOTER --------*/
 
     .footer {
-        background: lightgreen;
+        background-color: #f05f40;
+        height: 80px;
+    }
+
+    .footer p{
+      margin-top: 30px;
     }
