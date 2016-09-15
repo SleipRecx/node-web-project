@@ -8,6 +8,7 @@ $(document).ready(function(){
     $("#add-dinner-link").click(function () {
         $("#dinner-getting-section").hide();
         $("#dinner-list-section").show();
+        $('html, body').animate({ scrollTop: 500 }, 500);
     });
 });
 
@@ -15,6 +16,7 @@ $(document).ready(function () {
     $("#get-dinner-link").click(function () {
         $("#dinner-list-section").hide();
         $("#dinner-getting-section").show();
+        $('html, body').animate({ scrollTop: 500 }, 500);
     });
 });
 
