@@ -1,0 +1,18 @@
+.image-wrapper{
+  background-color: #406767;
+  height: 800px;
+  width: 100%;
+}
+
+.text-container{
+  margin: 0;
+  width: 40%;
+
+}
+.text-container h1{
+  color: #e6e6e6;
+  margin: 0;
+  padding-left: 10%;
+  padding-top: 20%;
+  font-size: 50pt;
+}
