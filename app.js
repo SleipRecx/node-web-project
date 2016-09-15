@@ -24,6 +24,8 @@ app.get("/doc", routes.doc);
 
 app.get("/random_beer", routes.random_beer);
 
+app.get("/random_armor", routes.random_armor);
+
 app.get("/film", routes.film);
 
 app.get("/data",routes.data);

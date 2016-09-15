@@ -3,6 +3,7 @@ var imageIndex = 1;
 
 $(document).ready(function(){
   showImage(imageIndex);
+  $(".btn").click(displayRandomArmor);
 });
 
 function nextImage(n) {
@@ -36,6 +37,18 @@ function showImage(n) {
     images[imageIndex - 1].className += " chosen-image";
 }
 
+function displayRandomArmor(){
+    var image = $("#random-armor")[0];
+    var random = Math.floor((Math.random() * 42) + 1);
+    $.ajax({
+        type: "GET",
+        url:'random_armor',
+        contentType: "image/png",
+        success: function(data){
+            image.src = data;
+        }
+    });
+
 /* IMDB Plugin */
 
 (function (d, s, id) {
@@ -47,4 +60,4 @@ function showImage(n) {
     js.id = id;
     js.src = "http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";
     stags.parentNode.insertBefore(js, stags);
-})(document, 'script', 'imdb-rating-api');
+})(document, 'script', 'imdb-rating-api');}

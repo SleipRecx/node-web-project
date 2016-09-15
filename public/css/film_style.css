@@ -23,7 +23,7 @@
 
 .images-container {
     text-align: center;
-    background-color: #c35033;
+    background-color: #f05f40;
     padding: 25px;
 }
 
@@ -100,5 +100,37 @@
 
 .image:hover {
     cursor: pointer;
+}
+
+.armor-container{
+    color: white;
+    width: 100%;
+    background-color:  #364850;
+    text-align: center;
+    padding: 50px;
+}
+
+.btn{
+    cursor: pointer;
+    margin: 0 auto;
+    width: 15%;
+    border: 0;
+    border-radius: 300px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-color: #fff;
+    color: white;
+    background-color: #f05f40;
+    margin-bottom: 30px;
+}
+
+
+.btn:hover {
+    background-color: #c35033;
+}
+.btn::selection {
+    background: none;
 }
 
