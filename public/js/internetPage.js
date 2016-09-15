@@ -1,6 +1,7 @@
 
 //Jquery/AJAX Retrives content of kaText1 from server and displays it
 // Uses the Jquery id selector and mousenter/Mouseleav eventhandler
+
 $(document).ready(function(){
   $("#Hoverbox").mouseenter(function(){
       console.log('rgmouseenter')
@@ -24,7 +25,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 
 
-
+    $("#graf").css('cursor', 'pointer');
 $("#graf").click(function(){
 
     if($("#graf").attr('src')=="../img/internet/piechart.jpg"){
@@ -40,6 +41,18 @@ $("#graf").click(function(){
 
 });
 
+$(document).ready(function(){
+    $("#more").css('cursor', 'pointer');
+
+
+    $("#more").click(function(){
+        $('html, body').animate({ scrollTop: 500 }, 500);
+
+
+
+    })
+
+});
 
 
 

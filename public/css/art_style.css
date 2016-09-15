@@ -1,7 +1,9 @@
 #page           { text-align: center; color: white;}
 body            {background-color: #395f73; }
+
 .footer          {margin-bottom: 0; margin-top: 5em; text-align: center;}
-button          {font-size: 3em; margin-top: 20px; margin-right: 25px; margin-left: 25px; padding: 0.2em;
+
+button          {cursor: pointer; font-size: 3em; margin-top: 20px; margin-right: 25px; margin-left: 25px; padding: 0.2em;
     color:white; background-color: #202020; border: none;}
 button:hover    { background-color: #505050;}
 button:focus    {outline: 0;}
