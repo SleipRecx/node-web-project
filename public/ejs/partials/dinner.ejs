@@ -31,9 +31,14 @@
 
     $(document).ready(function () {
         $("#get-dinner").click(function () {
-            $("#dinner-result").val(valueOf(($("#dinner-list:nth-child(1)"))));
+            var text_val = $('#dinner-list').children().eq((Math.floor((Math.random() * $("#this").length) + 1 ))).text();
+            $("#dinner-result").text(text_val);
+
         });
+
     });
+
+
 
    // $( "#dinner-list:nth-child(Math.floor( (Math.random() * $("dinner-list").length) + 1 );)
    // Math.floor( (Math.random() * $("#add-dinner").length) + 1 );
