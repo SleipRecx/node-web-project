@@ -163,6 +163,14 @@
     .flex-item:hover{
         background-color: #f05f40;
     }
+    
+    .hidden{
+        display: none;
+    }
+
+    .active{
+        display: block;
+    }
 
 
     /*--------------- CH4 MAIN --------*/

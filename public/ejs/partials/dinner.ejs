@@ -1,3 +1,43 @@
+
+<script>
+    $(document).ready(function(){
+        $("#dinner-getting-section").hide();
+        $("#dinner-list-section").show();
+    });
+
+    $(document).ready(function(){
+        $("#add-dinner-link").click(function () {
+            $("#dinner-getting-section").hide();
+            $("#dinner-list-section").show();
+        });
+    });
+
+    $(document).ready(function () {
+        $("#get-dinner-link").click(function () {
+            $("#dinner-list-section").hide();
+            $("#dinner-getting-section").show();
+        });
+    });
+
+    $(document).ready(function () {
+        $("#add-dinner").click(function () {
+            $("#dinner-list").append($('<li>', {
+                text: $('#name').val()
+            }));
+
+        });
+    });
+
+    $(document).ready(function () {
+        $("#get-dinner").click(function () {
+            $("#dinner-result").val(valueOf(($("#dinner-list:nth-child(1)"))));
+        });
+    });
+
+   // $( "#dinner-list:nth-child(Math.floor( (Math.random() * $("dinner-list").length) + 1 );)
+   // Math.floor( (Math.random() * $("#add-dinner").length) + 1 );
+</script>
+
 <header class="section1">
     <h1>The Dinner Selector</h1>
     <p>When you want everything for dinner, but can only eat one thing at a time.</p>
@@ -32,5 +72,5 @@
 <section id="dinner-getting-section" class="section3">
     <h2>Get a random dinner</h2>
     <button id="get-dinner" class="btn">Get random dinner</button>
-    <output id="dinner-result"></output>
+    <div id="dinner-result"></div>
 </section>
