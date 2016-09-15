@@ -9,15 +9,16 @@
 
 
     /*--------------- CH1 GENERIC --------*/
-    header h1 {
-            color: #d8d8d8;
+    header {
+
     }
 
 
     header a{
+      color: #d8d8d8;
       text-decoration: none;
       color: white;
-      font-size: 14pt;
+      font-size: 12pt;
       border: 0;
       text-decoration: none;
       text-transform: uppercase;
@@ -66,16 +67,17 @@
 
     .flex-item {
         width: 14%;
-        padding: 2em;
-        background-color: #41555f;
+        height: 50px;
+        padding-top: 20px;
+        background-color: #f05f40;
         list-style: none;
         font-size: 16px;
         color: #262626;
-        border-left: 1px solid rgba(255, 255, 255, 0.17);
+        border-left: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .flex-item:hover{
-        background-color: #f05f40;
+        background-color: #fd9c87;
     }
 
 
