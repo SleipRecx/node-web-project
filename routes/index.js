@@ -19,6 +19,9 @@ exports.doc = function(req,res){
 	res.render("index", {route: "doc"});
 };
 
+exports.art = function(req,res){
+    res.render("index", {route: "art"});
+};
 
 exports.beer_img = function(req,res){
 	res.sendFile('img/beers/beer1.png', { root: "public" });
