@@ -1,4 +1,6 @@
-
+body{
+  background: #395F73;
+}
     #image-sushi {
         display: block;
         margin-left: auto;
@@ -9,7 +11,7 @@
     h1 {
         text-align: center;
         margin-top: 0;
-        padding-top: 5%;
+        padding-top: 3%;
     }
 
     #sushibutton{
@@ -47,7 +49,8 @@
         height: 100%;
         background-size: cover;
     }
-    
+
+
     footer{
       position: absolute;
     }
