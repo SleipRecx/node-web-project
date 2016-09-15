@@ -8,6 +8,8 @@
     }
     h1 {
         text-align: center;
+        margin-top: 0;
+        padding-top: 10px;
     }
 
     #sushibutton{
@@ -30,6 +32,7 @@
     }
 
     #wrapper{
+        color: white;
         display: block;
         background-size: cover;
         background: url('../img/sushi/s5.jpg') no-repeat;
