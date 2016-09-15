@@ -15,6 +15,10 @@ exports.beer = function(req,res){
 	res.render("index", {route: "beer"});
 };
 
+exports.sushi = function(req,res){
+	res.render("index", {route: "sushi"});
+};
+
 exports.doc = function(req,res){
 	res.render("index", {route: "doc"});
 };
