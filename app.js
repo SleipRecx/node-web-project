@@ -16,6 +16,8 @@ app.get("/dinner", routes.dinner);
 
 app.get("/beer", routes.beer);
 
+app.get("/sushi", routes.sushi);
+
 app.get("/doc", routes.doc);
 
 app.get("/random_beer", routes.random_beer);

@@ -80,6 +80,14 @@
     .flex-item:hover{
         background-color: #fd9c87;
     }
+    
+    .hidden{
+        display: none;
+    }
+
+    .active{
+        display: block;
+    }
 
     .flex-item a{
       display: block;
