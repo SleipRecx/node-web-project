@@ -17,6 +17,9 @@ exports.beer = function(req,res){
 
 exports.sushi = function(req,res){
 	res.render("index", {route: "sushi"});
+=======
+exports.film = function(req,res){
+	res.render("index", {route: "film"})
 };
 
 exports.doc = function(req,res){
@@ -32,6 +35,10 @@ exports.random_beer = function(req,res){
 	var random = Math.floor((Math.random() * 8) + 1);
 	var src = "img/beers/beer" + random.toString() + ".png";
 	res.send(src);
+=======
+exports.beer_img = function(req,res){
+	res.sendFile('img/beers/beer1.png', { root: "public" });
+>>>>>>> stian
 };
 
 exports.data=function(req,res){
