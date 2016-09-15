@@ -3,6 +3,16 @@
     background-size: cover;
     background: url('../img/internet/internetBG.jpg') no-repeat;
     width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.node-wrapper{
+    display: block;
+    background-size: cover;
+    background: url('../img/internet/NODEBG.png') no-repeat;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -10,8 +20,16 @@
 .article1 {
     color: #010101;
     padding-left: 10%;
+    width:50%;
+    text-align: justify;
+}
+.article2{
+    color: #f0f3f5;
+    padding-left: 10%;
     width:70%;
     text-align: justify;
+    height: 500px;
+
 }
 .image-wrapper{
     float: top;
@@ -21,16 +39,16 @@
 
 .hoverBox{
     float: right;
-
+    color: #cccccc;
     margin-top: 10px;
     margin-left: 10px;
-    margin-right: 5px;
+    margin-right: 130px;
     padding-right: 20px;
     padding-bottom: 20px;
     padding-top: 15px;
     padding-left: 20px;
-    text-align: center;
-    width: 140px;
+    text-align: left;
+    width: 180px;
     height: 140px;
     border: 1px solid black;
     border-radius: 10px;
