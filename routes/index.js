@@ -32,14 +32,13 @@ exports.art = function(req,res){
 };
 
 exports.random_beer = function(req,res){
-	console.log(req.params.current)
 	var random = Math.floor((Math.random() * 8) + 1);
 	var src = "img/beers/beer" + random.toString() + ".png";
 	res.send(src);
 };
 
 exports.data=function(req,res){
-res.sendFile("kaText1.txt",{root: "public"});
+res.sendFile("txt/kaText1.txt",{root: "public"});
 };
 exports.graf=function(req,res){
 res.send("../img/internet/xkcdgrapf.png");
