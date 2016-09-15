@@ -3,7 +3,9 @@ var imageIndex = 1;
 
 $(document).ready(function(){
   showImage(imageIndex);
-  $(".btn").click(displayRandomArmor);
+  $(".random").click(displayRandomArmor);
+  $(".next").click(displayNextArmor);
+  $(".previous").click(displayPreviousArmor);
 });
 
 function nextImage(n) {
@@ -37,17 +39,41 @@ function showImage(n) {
     images[imageIndex - 1].className += " chosen-image";
 }
 
-function displayRandomArmor(){
+function displayRandomArmor() {
     var image = $("#random-armor")[0];
     var random = Math.floor((Math.random() * 42) + 1);
     $.ajax({
-        type: "GET",
-        url:'random_armor',
-        contentType: "image/png",
-        success: function(data){
-            image.src = data;
+            type: "GET",
+            url: 'random_armor',
+            contentType: "image/png",
+            success: function (data) {
+                image.src = data;
+            }
         }
-    });
+    );
+}
+
+function displayNextArmor(){
+    var image = $("#random-armor")[0];
+    var armorNumber = image.src.split("mark");
+    armorNumber = armorNumber[1].split(".");
+    var numberAsInt = Number(armorNumber[0]);
+    if(numberAsInt < 42){
+        numberAsInt++;
+    }
+    image.src = "img/film/armors/mark" + numberAsInt.toString() + ".png";
+}
+
+function displayPreviousArmor(){
+    var image = $("#random-armor")[0];
+    var armorNumber = image.src.split("mark");
+    armorNumber = armorNumber[1].split(".");
+    var numberAsInt = Number(armorNumber[0]);
+    if(numberAsInt > 1){
+        numberAsInt--;
+    }
+    image.src = "img/film/armors/mark" + numberAsInt.toString() + ".png";
+}
 
 /* IMDB Plugin */
 
@@ -60,4 +86,4 @@ function displayRandomArmor(){
     js.id = id;
     js.src = "http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";
     stags.parentNode.insertBefore(js, stags);
-})(document, 'script', 'imdb-rating-api');}
+})(document, 'script', 'imdb-rating-api');
