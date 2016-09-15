@@ -1,16 +1,15 @@
 
 .film-introduction-wrapper {
-    background: url('../img/film/back.jpg');
+    background: url('../img/film/background2.jpg');
     width: 100%;
     height: 600px;
 }
 
 .film-introduction {
-    padding-left: 3%;
-    padding-top: 5%;
-    width: 30%;
+    padding-left: 10%;
+    padding-top: 10%;
+    width: 25%;
     font-size: 14pt;
-    text-transform: uppercase;
 }
 
 .film-introduction > * {
@@ -24,7 +23,7 @@
 
 .images-container {
     text-align: center;
-    background-color: #f05f40;
+    background-color: #c35033;
     padding: 25px;
 }
 
@@ -103,6 +102,3 @@
     cursor: pointer;
 }
 
-footer{
-  display: none;
-}
