@@ -27,6 +27,9 @@ exports.beer_img = function(req,res){
 exports.data=function(req,res){
 res.sendFile("kaText1.txt",{root: "public"});
 };
+exports.graf=function(req,res){
+res.send("../img/internet/xkcdgrapf.png");
+};
 
 exports.bad = function(req,res){
 	res.send("Bad Route");
