@@ -23,6 +23,9 @@ exports.doc = function(req,res){
 	res.render("index", {route: "doc"});
 };
 
+exports.art = function(req,res){
+    res.render("index", {route: "art"});
+};
 
 exports.random_beer = function(req,res){
 	console.log(req.params.current)

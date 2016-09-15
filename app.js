@@ -18,6 +18,8 @@ app.get("/beer", routes.beer);
 
 app.get("/sushi", routes.sushi);
 
+app.get("/art", routes.art);
+
 app.get("/doc", routes.doc);
 
 app.get("/random_beer", routes.random_beer);
