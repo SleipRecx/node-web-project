@@ -1,2 +1,3 @@
-This is stuff and things and other stuff!
-Ajax is working awesomesauce...........
+Text is now altered!
+This text was retrived from the server with AJAX.
+AJAX is working awesomesauce!
