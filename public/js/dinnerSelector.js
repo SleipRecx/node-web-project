@@ -1,43 +1,38 @@
-var addDinnerSection = document.getElementById("dinner-list-section");
-var getDinnerSection = document.getElementById("dinner-getting-section");
-var dinners = ["Taco","Pizza","Hamburger"];
-var getDinnerLinkButton = document.getElementById("get-dinner-link");
-var addDinnerLink = document.getElementById("add-dinner-link");
 
-function add(text) {
-    var dinnerList = document.getElementById("dinner-list");
-    var	li = document.createElement("li");
-    if(li !== ""){
-        li.innerHTML = text;
-        dinners.push(text);
-        dinnerList.appendChild(li);
-        document.getElementById("name").value = null;
-        document.getElementById("name").focus();
-    }
-}
-
-//buttons
-document.getElementById("add-dinner").addEventListener("click",function(){
-    add(document.getElementById("name").value);
+$(document).ready(function(){
+    $("#dinner-getting-section").hide();
+    $("#dinner-list-section").show();
 });
 
-document.getElementById("get-dinner").addEventListener("click",function(){
-    var dinner = dinners[Math.floor(Math.random()*dinners.length)];
-    document.getElementById("dinner-result").innerHTML = dinner;
+$(document).ready(function(){
+    $("#add-dinner-link").click(function () {
+        $("#dinner-getting-section").hide();
+        $("#dinner-list-section").show();
+    });
 });
 
-getDinnerLinkButton.addEventListener("click",function(){
-    getDinnerSection.className = "";
-    addDinnerSection.className = "hidden";
-
-    getDinnerLinkButton.className = "active";
-    addDinnerLink.className = "";
+$(document).ready(function () {
+    $("#get-dinner-link").click(function () {
+        $("#dinner-list-section").hide();
+        $("#dinner-getting-section").show();
+    });
 });
-addDinnerLink.addEventListener("click",function(){
-    getDinnerSection.className = "hidden";
-    addDinnerSection.className = "";
 
-    getDinnerLinkButton.className = "";
-    addDinnerLink.className = "active";
+$(document).ready(function () {
+    $("#add-dinner").click(function () {
+        $("#dinner-list").append($('<li>', {
+            text: $('#name').val()
+        }));
+
+    });
 });
+
+$(document).ready(function () {
+    $("#get-dinner").click(function () {
+        var text_val = $('#dinner-list').children().eq((Math.floor((Math.random() * 4) + 1))).text();
+        $("#dinner-result").text(text_val);
+    });
+});
+
+
 
