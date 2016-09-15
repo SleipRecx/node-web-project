@@ -22,7 +22,7 @@ app.get("/art", routes.art);
 
 app.get("/doc", routes.doc);
 
-app.get("/beer_img", routes.beer_img);
+app.get("/random_beer", routes.random_beer);
 
 app.get("/data",routes.data);
 app.get("/graf",routes.graf);
