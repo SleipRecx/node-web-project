@@ -67,19 +67,24 @@
 
     .flex-item {
         width: 14%;
-        height: 50px;
-        padding-top: 20px;
+        height: 65px;
+        line-height: 65px;
         background-color: #f05f40;
         list-style: none;
         font-size: 16px;
         color: #262626;
         border-left: 1px solid rgba(255, 255, 255, 0.25);
+        border-bottom:  1px solid rgba(255, 255, 255, 0.25);
     }
 
     .flex-item:hover{
         background-color: #fd9c87;
     }
 
+    .flex-item a{
+      display: block;
+      height: 100%;
+    }
 
     /*--------------- CH4 MAIN --------*/
 
