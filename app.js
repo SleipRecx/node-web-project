@@ -42,7 +42,5 @@ var port = 7432;
 
 var server = app.listen(port, function(){
 	console.log("Starting Server");
-	console.log("__________________________________");
 	console.log("Listening on port " + port);
-	console.log("Visit at " + "http://localhost:" + port);
 });
