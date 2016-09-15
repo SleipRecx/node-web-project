@@ -1,5 +1,6 @@
 
 //Jquery/AJAX Retrives content of kaText1 from server and displays it
+// Uses the Jquery id selector and mousenter/Mouseleav eventhandler
 $(document).ready(function(){
   $("#Hoverbox").mouseenter(function(){
       console.log('rgmouseenter')
@@ -19,6 +20,7 @@ $(document).ready(function(){
 
 //Function retrieves new image link from server and sets the new source
 //If source has been altered it resets to original source
+// uses Jquery click function and id selector
 $(document).ready(function(){
 
 
