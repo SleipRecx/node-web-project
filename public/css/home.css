@@ -1,18 +1,41 @@
 .image-wrapper{
-  background-color: #406767;
-  height: 800px;
+  height: 100%;
   width: 100%;
+  min-height: 650px;
+}
+
+body{
+    background: url('../img/back.jpg') no-repeat;
+}
+
+.flex-item {
+    width: 14%;
+    height: 65px;
+    line-height: 65px;
+    background-color: rgba(240, 95, 64, 0.44);
+    list-style: none;
+    font-size: 16px;
+    color: #262626;
+}
+
+header{
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .text-container{
   margin: 0;
   width: 40%;
-
 }
+
 .text-container h1{
-  color: #e6e6e6;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.67);
   margin: 0;
   padding-left: 10%;
-  padding-top: 20%;
-  font-size: 50pt;
+  padding-top: 30%;
+  font-size: 30pt;
+}
+
+footer{
+  background-color: rgba(240, 95, 64, 0.3);
 }
