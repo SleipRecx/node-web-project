@@ -1,8 +1,9 @@
 var imageIndex = 1;
 
-window.onload = function () {
-    showImage(imageIndex);
-};
+
+$(document).ready(function(){
+  showImage(imageIndex);
+});
 
 function nextImage(n) {
     showImage(imageIndex += n);

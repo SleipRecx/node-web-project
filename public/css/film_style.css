@@ -6,8 +6,8 @@
 }
 
 .film-introduction {
-    padding-left: 10%;
-    padding-top: 10%;
+    padding-left: 5%;
+    padding-top: 5%;
     width: 40%;
 }
 
@@ -29,7 +29,7 @@
 .image-display {
     text-align: center;
     display: block;
-    background-color: #2d59b6;
+    background-color: #3d5994;
     padding: 10px;
     color: white;
 }

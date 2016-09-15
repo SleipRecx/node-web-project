@@ -68,7 +68,7 @@
         list-style: none;
         font-size: 16px;
         color: #262626;
-        border-left: 1px solid rgba(255, 255, 255, 0.25);
+      
     }
 
     .flex-item:hover{
