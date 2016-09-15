@@ -1,20 +1,38 @@
 // Runs the clock in upper right corner on startup
 //Also sets some attributes on the iframe that are no longer valid HTML5 markup
 $(document).ready(function(){
-  $("#ajaxtest").mouseenter(function(){
+  $("#Hoverbox").mouseenter(function(){
       console.log('rgmouseenter')
       $.ajax({url:"data", success:function(result){
-          $("#ajaxtest").html(result);
+          $("#Hoverbox").html(result);
 
       }})
 
 
   });
-    $("#ajaxtest").mouseleave(function(){
+    $("#Hoverbox").mouseleave(function(){
         console.log('mousexit');
-        $("#ajaxtest").html("This is original text from HTML!");
+        $("#Hoverbox").html("Hover to change text with AJAX!");
 
     })
+});
+$(document).ready(function(){
+
+
+
+$("#graf").click(function(){
+
+    if($("#graf").attr('src')=="../img/internet/piechart.jpg"){
+
+    $.ajax({url:"graf",success:function(result){
+        console.log(result)
+        $("#graf").attr('src',result);
+    }})
+}else{
+            $("#graf").attr('src',"../img/internet/piechart.jpg")
+        }
+})
+
 });
 
 // function to switch between color palettes in right side menu

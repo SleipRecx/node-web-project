@@ -1,0 +1,43 @@
+.internet-wrapper {
+    display: block;
+    background-size: cover;
+    background: url('../img/internet/internetBG.jpg') no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.article1 {
+    color: #010101;
+    padding-left: 10%;
+    width:70%;
+    text-align: justify;
+}
+.image-wrapper{
+    float: top;
+    float: right;
+    padding-left: 10%;
+}
+
+.hoverBox{
+    float: right;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-size: cover;
+    background: url('../img/internet/hoverBox.jpg') no-repeat;
+
+
+}
