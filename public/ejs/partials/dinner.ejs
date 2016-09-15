@@ -1,43 +1,5 @@
 <link rel="stylesheet" type="text/css" href="css/dinner.css">
-
-<script>
-    $(document).ready(function(){
-        $("#dinner-getting-section").hide();
-        $("#dinner-list-section").show();
-    });
-
-    $(document).ready(function(){
-        $("#add-dinner-link").click(function () {
-            $("#dinner-getting-section").hide();
-            $("#dinner-list-section").show();
-        });
-    });
-
-    $(document).ready(function () {
-        $("#get-dinner-link").click(function () {
-            $("#dinner-list-section").hide();
-            $("#dinner-getting-section").show();
-        });
-    });
-
-    $(document).ready(function () {
-        $("#add-dinner").click(function () {
-            $("#dinner-list").append($('<li>', {
-                text: $('#name').val()
-            }));
-
-        });
-    });
-
-    $(document).ready(function () {
-        $("#get-dinner").click(function () {
-            $("#dinner-result").val(valueOf(($("#dinner-list:nth-child(1)"))));
-        });
-    });
-
-   // $( "#dinner-list:nth-child(Math.floor( (Math.random() * $("dinner-list").length) + 1 );)
-   // Math.floor( (Math.random() * $("#add-dinner").length) + 1 );
-</script>
+<script type="text/javascript" src="js/dinnerSelector.js"></script>
 
 
 <header class="section" >

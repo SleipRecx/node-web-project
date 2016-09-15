@@ -1,0 +1,39 @@
+
+    #image-sushi {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50px;
+
+    }
+    h1 {
+        text-align: center;
+    }
+
+    #sushibutton{
+        font-family: "Times New Roman", Times, serif;
+        display: block;
+        padding: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        border-radius: 12px;
+        background-color: white;
+        color: black;
+        border: 2px solid brown;
+        font-size: 16px;
+    }
+
+    #caption {
+        text-align: center;
+        margin: 0;
+    }
+
+    #wrapper{
+        display: block;
+        background-size: cover;
+        background: url('../img/sushi/s5.jpg') no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
