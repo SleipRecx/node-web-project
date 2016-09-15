@@ -27,6 +27,7 @@ app.get("/random_beer", routes.random_beer);
 app.get("/film", routes.film);
 
 app.get("/data",routes.data);
+
 app.get("/graf",routes.graf);
 
 app.get("*", routes.bad);

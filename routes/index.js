@@ -18,6 +18,7 @@ exports.beer = function(req,res){
 exports.sushi = function(req,res){
 	res.render("index", {route: "sushi"});
 };
+
 exports.film = function(req,res){
 	res.render("index", {route: "film"})
 };
