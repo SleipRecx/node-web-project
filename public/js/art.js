@@ -6,6 +6,11 @@ window.onload = function () {
     var next = document.getElementById("next");
     next.addEventListener("click", function(){ slide(1); });
 }
+/*
+$(document).ready(function(){
+  $("#next").click(slide(1));
+  $("#prev").click(slide(-1));
+});*/
 
 var image1=new Image()
 image1.src="img/art/pexels5.jpeg"
