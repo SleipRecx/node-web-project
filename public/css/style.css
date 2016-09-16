@@ -25,6 +25,8 @@
       padding: 0;
       font-family: 'Open Sans', sans-serif;
       -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;  
+      overflow-y: scroll;
     }
 
 
@@ -149,8 +151,14 @@
         background-color: #e6e6e6;
         color: black;
         border-radius: 2px;
+        overflow-x: scroll;
     }
 
     .code-wide {
-        width: 1300px;
+        width: 75%;
     }
+
+    .documentation p{
+        width: 50%;
+    }
+

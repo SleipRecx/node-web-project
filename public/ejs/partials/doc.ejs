@@ -17,6 +17,21 @@
         <header>
             <h3>Use Node and Express as server.</h3>
         </header>
+
+        <pre>
+We used a simple node/express server with the following dependencies:
+"ejs": "^2.5.1",
+"express": "^4.14.0",
+"flightplan": "^0.6.14",
+"forever": "^0.15.2",
+"serve-favicon": "^2.3.0"
+        </pre>
+        <p>
+            We decided to use the ejs view engine for all views and defined the express server directly in the app.js file.
+            All get methods are defined in app.js with a default “Bad route” for any unknown routes the user may attempt
+            The actual routing is defined in index.js.
+            For further detail check the embedded code with comments.
+        </p>
         <h4>App.js</h4>
         <pre class="code">
 //All requirements for the node.js app
