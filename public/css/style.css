@@ -142,3 +142,15 @@
         text-decoration: underline;
         cursor: auto;
     }
+
+    .code {
+        padding: 20px;
+        width: 350px;
+        background-color: #e6e6e6;
+        color: black;
+        border-radius: 2px;
+    }
+
+    .code-wide {
+        width: 1200px;
+    }
