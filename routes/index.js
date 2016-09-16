@@ -1,4 +1,5 @@
-
+// All the routing for the applikation.
+// these are called in app.js and defines the response to send.
 exports.home = function(req,res){
 	res.render("index", {route: "home"});
 };
