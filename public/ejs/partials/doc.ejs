@@ -1,28 +1,30 @@
-<h2>Documentation</h2>
-<p>Requirements and how we solved them.</p>
 
-<ol>
-    <li><a href="#node">Use Node and Express as server.</a></li>
-    <li><a href="#flexbox">Create the general layout using Flexbox.</a></li>
-    <li><a href="#nav">The Navigation.</a></li>
-    <li><a href="#ajax">AJAX functionality.</a></li>
-    <li><a href="#jquery">Use the basics of the jQuery library.</a></li>
-    <li><a href="#participation">Participation and Contribution.</a></li>
-    <li><a href="#knowledge">Knowledge Sharing.</a></li>
-</ol>
+<div class="documentation">
+    <h2>Documentation</h2>
+    <p>Requirements and how we solved them.</p>
 
-<section id="node">
-    <header>
-        <h3>Use Node and Express as server.</h3>
-    </header>
-    <p>Node doc goes here...</p>
-</section>
+    <ol class="doc-links">
+        <li><a href="#node">Use Node and Express as server.</a></li>
+        <li><a href="#flexbox">Create the general layout using Flexbox.</a></li>
+        <li><a href="#nav">The Navigation.</a></li>
+        <li><a href="#ajax">AJAX functionality.</a></li>
+        <li><a href="#jquery">Use the basics of the jQuery library.</a></li>
+        <li><a href="#participation">Participation and Contribution.</a></li>
+        <li><a href="#knowledge">Knowledge Sharing.</a></li>
+    </ol>
 
-<section id="flexbox">
-    <header>
-        <h3>Create the general layout using Flexbox.</h3>
-    </header>
-    <p>An extract from the CSS:</p>
+    <section id="node">
+        <header>
+            <h3>Use Node and Express as server.</h3>
+        </header>
+        <p>Node doc goes here...</p>
+    </section>
+
+    <section id="flexbox">
+        <header>
+            <h3>Create the general layout using Flexbox.</h3>
+        </header>
+        <p>An extract from the CSS:</p>
     <pre>
 
 
@@ -58,48 +60,48 @@
         list-style: none;
     }
     </pre>
-    <p>
-        “Display: flex” simply defines a flex container and enables all its direct children to flex context.
-        Therefore we have a wrapper around all the content of the page. The direct child of the wrapper is the header
-        (which contains the navigation), a main element with interchangeable content of all subpages, and a footer. The
-        next rule:
-    </p>
+        <p>
+            “Display: flex” simply defines a flex container and enables all its direct children to flex context.
+            Therefore we have a wrapper around all the content of the page. The direct child of the wrapper is the header
+            (which contains the navigation), a main element with interchangeable content of all subpages, and a footer. The
+            next rule:
+        </p>
     <pre>
         .wrapper > * {
         flex: 1 100%;
     }
     </pre>
-    <p>
-        States that the all the direct children (the header, main, and footer) should span the whole width of the page.
-    </p>
-</section>
+        <p>
+            States that the all the direct children (the header, main, and footer) should span the whole width of the page.
+        </p>
+    </section>
 
-<section id="nav">
-    <header>
-        <h3>The Navigation</h3>
-    </header>
-    <p>
-        The navigation is wrapped its own flex container and states that each item in the container should be center
-        aligned with each other (justify-content: center;).
-        The navbar class centers the ul containing all the links.
-    </p>
-</section>
+    <section id="nav">
+        <header>
+            <h3>The Navigation</h3>
+        </header>
+        <p>
+            The navigation is wrapped its own flex container and states that each item in the container should be center
+            aligned with each other (justify-content: center;).
+            The navbar class centers the ul containing all the links.
+        </p>
+    </section>
 
-<section id="ajax">
-    <header>
-        <h3>AJAX functionality.</h3>
-    </header>
-    <p>
-        We used AJAX in a number of functions across the site.
-        We used it to fetch text from files on the server and apply these to the DOM using JQuery. ref: Internet
-        It was also used to retrieve image links on certain parts of the site. ref:Beer,internet.
-    </p>
-</section>
+    <section id="ajax">
+        <header>
+            <h3>AJAX functionality.</h3>
+        </header>
+        <p>
+            We used AJAX in a number of functions across the site.
+            We used it to fetch text from files on the server and apply these to the DOM using JQuery. ref: Internet
+            It was also used to retrieve image links on certain parts of the site. ref:Beer,internet.
+        </p>
+    </section>
 
-<section id="jquery">
-    <header>
-        <h3>Use the basics of the jQuery library.</h3>
-    </header>
+    <section id="jquery">
+        <header>
+            <h3>Use the basics of the jQuery library.</h3>
+        </header>
     <pre>
         For the most part we used the id selector($(“#yourID”)) to reference sections we wanted altered using JQuery ref:Beer,internet,dinnerselector, film
 
@@ -110,34 +112,35 @@
         We also defined several event handlers that made use of mouseover(),click() etc.
         ref:Beer,internet,dinnerselector, film
     </pre>
-</section>
+    </section>
 
-<section id="participation">
-    <header>
-        <h3>Participation and Contribution</h3>
-    </header>
-    <p>
-        All the members have committed code during the span of the exercise. We met every Wednesday and divided the
-        different requirements topics to groups containing of two people:
-    </p>
-    <ul>
-        <li><p>Group Node & Express; Markus and Stian - Worked with Node.js and Express.js. Markus had the most
-                knowledge about Node and Express so Stian joined him in order to learn more about it.</p></li>
-        <li><p>Group Flexbox; Marius and Thomas - Marius and Thomas both had knowledge about CSS, but had never worked
-                with Flexbox before. In order to fulfill the requirement they had to do substantial research and learned
-                a lot about Flexbox within the span of the project.</p></li>
-        <li><p>Group jQuery; Ken Are and Daniel - Worked with jQuery and AJAX. They both had little to no knowledge
-                about jQuery, Ken Are had worked with it a little about two years ago. They both wanted more insight in
-                jQuery and shared discoveries with the group as the time went on.</p></li>
-    </ul>
-</section>
+    <section id="participation">
+        <header>
+            <h3>Participation and Contribution</h3>
+        </header>
+        <p>
+            All the members have committed code during the span of the exercise. We met every Wednesday and divided the
+            different requirements topics to groups containing of two people:
+        </p>
+        <ul>
+            <li><p>Group Node & Express; Markus and Stian - Worked with Node.js and Express.js. Markus had the most
+                    knowledge about Node and Express so Stian joined him in order to learn more about it.</p></li>
+            <li><p>Group Flexbox; Marius and Thomas - Marius and Thomas both had knowledge about CSS, but had never worked
+                    with Flexbox before. In order to fulfill the requirement they had to do substantial research and learned
+                    a lot about Flexbox within the span of the project.</p></li>
+            <li><p>Group jQuery; Ken Are and Daniel - Worked with jQuery and AJAX. They both had little to no knowledge
+                    about jQuery, Ken Are had worked with it a little about two years ago. They both wanted more insight in
+                    jQuery and shared discoveries with the group as the time went on.</p></li>
+        </ul>
+    </section>
 
-<section id="knowledge">
-    <header>
-        <h3>Knowledge Sharing</h3>
-    </header>
-    <p>
-        On Wednesday 21st each sub-group will share with the rest of the group members what they have learned about said
-        technology in order to make sure everyone is up-to-date on the course technologies.
-    </p>
-</section>
+    <section id="knowledge">
+        <header>
+            <h3>Knowledge Sharing</h3>
+        </header>
+        <p>
+            On Wednesday 21st each sub-group will share with the rest of the group members what they have learned about said
+            technology in order to make sure everyone is up-to-date on the course technologies.
+        </p>
+    </section>
+</div>

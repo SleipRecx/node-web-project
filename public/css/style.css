@@ -130,3 +130,15 @@
       padding-left: 10%;
       text-align: center;
     }
+
+    .documentation {
+        background-color: #395f73;
+        padding: 20px 200px 20px 200px;
+        color: white;
+    }
+
+    .doc-links li a {
+        color: white;
+        text-decoration: underline;
+        cursor: auto;
+    }
