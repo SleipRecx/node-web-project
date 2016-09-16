@@ -17,7 +17,123 @@
         <header>
             <h3>Use Node and Express as server.</h3>
         </header>
-        <p>Node doc goes here...</p>
+        <h4>App.js</h4>
+        <pre class="code">
+//All requirements for the node.js app
+var express = require('express');
+var routes = require('./routes');
+var favicon = require('serve-favicon');
+var app = express();
+//Defines view engine jo ejs
+app.set("view engine", "ejs");
+// sets view path to current directory +/public
+app.set('views', __dirname + '/public');
+//Sets the path to all static GET methods to publiv
+app.use(express.static('public'));
+// sets the favicon
+app.use(favicon(__dirname + '/public/img/favicon.ico'));
+
+
+//<------------------------------------------->
+// All the routes we are using
+// Includes a default Bad Route if no route matches.
+app.get("/", routes.home);
+
+app.get("/internet", routes.internet);
+
+app.get("/dinner", routes.dinner);
+
+app.get("/beer", routes.beer);
+
+app.get("/sushi", routes.sushi);
+
+app.get("/art", routes.art);
+
+app.get("/doc", routes.doc);
+
+app.get("/random_beer", routes.random_beer);
+
+app.get("/random_armor", routes.random_armor);
+
+app.get("/film", routes.film);
+
+app.get("/data",routes.data);
+
+app.get("/graf",routes.graf);
+
+app.get("*", routes.bad);
+//<---------------------------------------------------------------->
+
+// defines the port
+var port = 7432;
+// starting the actual express server
+var server = app.listen(port, function(){
+	console.log("Starting Server");
+	console.log("Listening on port " + port);
+});
+        </pre>
+        <br>
+        <h4>index.js</h4>
+        <pre class="code">
+// All the routing for the applikation.
+// these are called in app.js and defines the response to send.
+exports.home = function(req,res){
+	res.render("index", {route: "home"});
+};
+
+exports.internet = function(req,res){
+	res.render("index", {route: "internet"});
+};
+
+exports.dinner = function(req,res){
+	res.render("index", {route: "dinner"});
+};
+
+exports.beer = function(req,res){
+	res.render("index", {route: "beer"});
+};
+
+exports.sushi = function(req,res){
+	res.render("index", {route: "sushi"});
+};
+
+exports.film = function(req,res){
+	res.render("index", {route: "film"})
+};
+
+exports.doc = function(req,res){
+	res.render("index", {route: "doc"});
+};
+
+exports.art = function(req,res){
+    res.render("index", {route: "art"});
+};
+
+exports.random_beer = function(req,res){
+	var random = Math.floor((Math.random() * 8) + 1);
+	var src = "img/beers/beer" + random.toString() + ".png";
+	res.send(src);
+};
+
+exports.random_armor = function(req,res){
+	var random = Math.floor((Math.random() * 42) + 1);
+	var src = "img/film/armors/mark" + random.toString() + ".png";
+	res.send(src);
+};
+
+exports.data=function(req,res){
+res.sendFile("txt/kaText1.txt",{root: "public"});
+};
+exports.graf=function(req,res){
+res.send("../img/internet/xkcdgrapf.png");
+};
+
+exports.bad = function(req,res){
+	res.send("Bad Route");
+};
+
+        </pre>
+
     </section>
 
     <section id="flexbox">
