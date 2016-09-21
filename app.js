@@ -44,7 +44,7 @@ app.get("*", routes.bad);
 //<---------------------------------------------------------------->
 
 // defines the port
-var port = 7432;
+var port = 80;
 // starting the actual express server
 var server = app.listen(port, function(){
 	console.log("Starting Server");
